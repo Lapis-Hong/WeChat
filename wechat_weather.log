@@ -1,0 +1,30 @@
+█Traceback (most recent call last):
+  File "wechat_weather.py", line 74, in <module>
+    itchat.auto_login(hotReload=True)  # 方便调试，不用每次都扫二维码
+  File "/Users/lapis-hong/tensorflow/lib/python2.7/site-packages/itchat/components/register.py", line 32, in auto_login
+    loginCallback=loginCallback, exitCallback=exitCallback)
+  File "/Users/lapis-hong/tensorflow/lib/python2.7/site-packages/itchat/components/login.py", line 40, in login
+    uuid = push_login(self)
+  File "/Users/lapis-hong/tensorflow/lib/python2.7/site-packages/itchat/components/login.py", line 90, in push_login
+    r = core.s.get(url, headers=headers).json()
+  File "/Library/Python/2.7/site-packages/requests/sessions.py", line 521, in get
+    return self.request('GET', url, **kwargs)
+  File "/Library/Python/2.7/site-packages/requests/sessions.py", line 508, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/Library/Python/2.7/site-packages/requests/sessions.py", line 618, in send
+    r = adapter.send(request, **kwargs)
+  File "/Library/Python/2.7/site-packages/requests/adapters.py", line 440, in send
+    timeout=timeout
+  File "/Library/Python/2.7/site-packages/urllib3/connectionpool.py", line 601, in urlopen
+    chunked=chunked)
+  File "/Library/Python/2.7/site-packages/urllib3/connectionpool.py", line 346, in _make_request
+    self._validate_conn(conn)
+  File "/Library/Python/2.7/site-packages/urllib3/connectionpool.py", line 850, in _validate_conn
+    conn.connect()
+  File "/Library/Python/2.7/site-packages/urllib3/connection.py", line 284, in connect
+    conn = self._new_conn()
+  File "/Library/Python/2.7/site-packages/urllib3/connection.py", line 141, in _new_conn
+    (self.host, self.port), self.timeout, **extra_kw)
+  File "/Library/Python/2.7/site-packages/urllib3/util/connection.py", line 60, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+KeyboardInterrupt

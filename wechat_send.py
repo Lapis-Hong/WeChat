@@ -60,13 +60,6 @@ def my_scheduler(run_time):
     scheduler.start()
 
 
-# 自动回复消息函数
-# @itchat.msg_register(itchat.content.TEXT)
-# def text_reply(msg):  # msg is a dict
-#     if msg['FromUserName'] == user_name:  # 自动回复某人信息
-#         return '爸爸正忙，请稍后在拨，爸爸不在，好好学习，爸爸回家要监督你，嘻嘻嘻'
-
-
 if __name__ == '__main__':
     # itchat.auto_login(enableCmdQR=False)  # True命令行二维码, 默认False是图片格式二维码
     itchat.auto_login(hotReload=True)  # 方便调试，不用每次都扫二维码

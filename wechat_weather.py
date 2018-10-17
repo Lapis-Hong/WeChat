@@ -72,7 +72,7 @@ def my_scheduler(run_time):
 
 if __name__ == '__main__':
     itchat.auto_login(hotReload=True)  # 方便调试，不用每次都扫二维码
-    users_info = itchat.search_friends(name='李香君')
+    users_info = itchat.search_friends(name='某某某')
     user_name = users_info[0]['UserName']  # User id @8935ca1e425e42432f5b7b8bb3f9244d1a9918ee954bdbafe8afc92a24dd1921
     content = get_weather()
     send()
